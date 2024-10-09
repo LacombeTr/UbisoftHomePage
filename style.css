@@ -856,6 +856,8 @@ a:visited {
 }
 
 .footer {
+	position: relative;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -942,6 +944,42 @@ a:visited {
 			align-items: end;
 
 			text-align: right;
+		}
+	}
+
+	.modalLanguage {
+		position: absolute;
+		bottom: 0;
+
+		padding: 48px;
+
+		display: flex;
+		flex-direction: column;
+
+		height: calc(100vh - 96px);
+
+		z-index: 3;
+
+		background-color: #1d1e22;
+
+		HR {
+			width: 100%;
+		}
+
+		h4 {
+			margin-block: 16px 0px;
+			font-family: Ubisoft Sans;
+		}
+
+		p {
+			cursor: pointer;
+			margin: 0;
+			text-transform: capitalize;
+			font-size: 16px;
+		}
+
+		p:hover {
+			text-decoration: underline;
 		}
 	}
 }
